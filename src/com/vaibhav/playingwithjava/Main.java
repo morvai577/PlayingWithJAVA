@@ -3,21 +3,42 @@ package com.vaibhav.playingwithjava;
 public class Main {
 
     public static void main(String[] args) {
-        int a = 23;
-        int b = 47;
+        int a = 5;
+        int b = 10;
 
-        int result = a < b ? a + b : 0;
+        int counter = 0;
 
-        System.out.println(result);
-
-        int c = 50;
-
-        if(a < b) {
-            System.out.println("a is less than b");
+        while (a < b){
+            counter += 1;
+            System.out.println("While runs: " + counter + " times.");
+            a++;
         }
 
-        if(a < c) {
-            System.out.println("a is less than c");
+        /*
+        counter = 0;
+
+        do {
+            counter += 1;
+            a++;
+            System.out.println("Do While runs: " + counter + " times.");
+        } while (a < b);
+
+        */
+
+        counter = 0;
+
+        for (int c = 0; c < 5; c++){
+            counter += 1;
+            System.out.println("For loop runs: " + counter + " times.");
+        }
+
+        counter = 0;
+
+        int[] array = {10, 20, 30, 40, 50};
+
+        for(int currentVal: array){
+            counter += 1;
+            System.out.println("Foreach loop runs: " + counter + " times.");
         }
     }
 }
