@@ -3,13 +3,20 @@ package com.vaibhav.playingwithjava;
 public class Main {
 
     public static void main(String[] args) {
-        Person p1 = new Person();
-        Person p3 = new Person("Harry Potter");
-        double p3income = p3.getIncome(60000,0.115);
-        System.out.println(p3income);
-        System.out.println(p1.getName());
-        p1.setName("Bob");
-        System.out.println(p1.getName());
+
+        Flight val1 = new Flight(10);
+        Flight val2 = new Flight(20);
+
+        System.out.println("Flight 1 value is: " + val1.getValue());
+        System.out.println("Flight 2 value is: " + val2.getValue());
+
+
+        val1.swapNum(val1, val2);
+
+        System.out.println("Flight 1 value is: " + val1.getValue());
+        System.out.println("Flight 2 value is: " + val2.getValue());
+
+
 
     }
 }
