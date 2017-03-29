@@ -21,6 +21,8 @@ public class Person {
         return gender;
     }
 
+    public String getName() {return name;}
+
     //Setters
     public void setAge(int age){
         this.age = age;
@@ -30,15 +32,23 @@ public class Person {
         this.gender = gender;
     }
 
+    public void setName(String name) {this.name = name;}
+
     //Methods
-    public int getIncome(int incomeBeforeTax, int taxRate){
-        int value = incomeBeforeTax * taxRate;
+    public double getIncome(double incomeBeforeTax, double taxRate){
+        double tax = incomeBeforeTax * taxRate;
+        double value = incomeBeforeTax - tax;
         return value;
     }
 
     //This
     public boolean isOlder(Person p2){
         return this.age > p2.age;
+    }
+
+    // Initialisation Blocks
+    {
+        name = "Anonymous";
     }
 
     //Constructor 1
