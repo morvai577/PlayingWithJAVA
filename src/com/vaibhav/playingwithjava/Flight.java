@@ -5,11 +5,13 @@ package com.vaibhav.playingwithjava;
  */
 public class Flight {
 
-    private int value;
+    private int value = 0;
 
     public int getValue(){return value;}
 
     public void setValue(int value){this.value = value;}
+
+    public Flight() {}
 
     public Flight(int value){
         this.value = value;
@@ -21,8 +23,6 @@ public class Flight {
         j.setValue(k);
     }
 
-    public void printFlightNumbers(int... flightNumber){
-        System.out.println(flightNumber.toString());
-    }
+    public int getSeats() {return 20;}
 
 }
