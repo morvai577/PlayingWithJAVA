@@ -20,4 +20,9 @@ public class Flight {
         i.setValue(j.getValue());
         j.setValue(k);
     }
+
+    public void printFlightNumbers(int... flightNumber){
+        System.out.println(flightNumber.toString());
+    }
+
 }

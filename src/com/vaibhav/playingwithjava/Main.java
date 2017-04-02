@@ -16,7 +16,7 @@ public class Main {
         System.out.println("Flight 1 value is: " + val1.getValue());
         System.out.println("Flight 2 value is: " + val2.getValue());
 
-
+        val1.printFlightNumbers(20,30,40,50);
 
     }
 }
