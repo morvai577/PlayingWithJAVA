@@ -1,2 +1,6 @@
 # Ignore
 .idea/workspace.xml
+.DS_Store
+.idea/.DS_Store
+out/.DS_Store
+src/.DS_Store
