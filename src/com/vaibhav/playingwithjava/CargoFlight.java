@@ -1,7 +1,5 @@
 package com.vaibhav.playingwithjava;
 
-import jdk.nashorn.internal.objects.annotations.Setter;
-
 /**
  * Created by imac on 2/04/17.
  */
@@ -12,6 +10,8 @@ public class CargoFlight extends Flight {
     private int usedCargoSpace = 0;
     private int value = 20; // Overrides base class field
 
+    //Final Fields
+    static final int NUMBEROFCREW = 20; // Can't be changed
 
     //Getters
     public int getMaxCargoSpace(){
